@@ -2,7 +2,7 @@
     "name": "appspubs/env-builder",
     "description": "This is used to deploy and create multiple  environments on the click of things",
     "type": "metapackage",
-    "license": "GNU-GPL 3.0",
+    "license": "GPL-3.0-or-later",
     "autoload": {
         "psr-4": {
             "Appspubs\\EnvBuilder\\": "src/"
