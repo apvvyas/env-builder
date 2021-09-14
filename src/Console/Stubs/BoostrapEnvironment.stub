@@ -1,0 +1,19 @@
+<?php
+use Dotenv\Dotenv;
+
+$env = $app->detectEnvironment(function () {
+
+    $environmentPath = realpath(dirname(__DIR__))."/.env";
+
+    // Production ENV
+    
+    
+    if (file_exists($environmentPath))
+    {
+        $setEnv = trim(file_get_contents($environmentPath));
+        putenv('APP_ENV='.$setEnv);
+        $dotenv = Dotenv::createImmutable(__DIR__ . '/../{{env_folder}}/', '.' . getenv('APP_ENV') . '.env');
+        $dotenv->load(); //this is important        
+    }
+
+});
