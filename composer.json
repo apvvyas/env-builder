@@ -1,0 +1,36 @@
+{
+    "name": "appspubs/env-builder",
+    "description": "This is used to deploy and create multiple  environments on the click of things",
+    "type": "metapackage",
+    "license": "GNU-GPL 3.0",
+    "autoload": {
+        "psr-4": {
+            "Appspubs\\EnvBuilder\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Apoorv Vyas",
+            "email": "apvvyas@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php": "^7.4|^8.0",
+        "illuminate/contracts": "^8.0"
+    },
+    "require-dev": {
+        "orchestra/testbench": "^6.0",
+        "phpunit/phpunit": "^9.3"
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Appspubs\\EnvBuilder\\Providers\\EnvBuildServiceProvider"
+            ]
+        }
+    }
+}
