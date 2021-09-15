@@ -7,6 +7,10 @@
         {
             "name": "Apoorv Vyas",
             "email": "apvvyas@gmail.com"
+        },
+        {
+            "name": "Select Source Internationals",
+            "email": "amitc@selectsourceintl.com"
         }
     ],
     "minimum-stability": "dev",
